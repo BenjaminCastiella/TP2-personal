@@ -54,8 +54,8 @@ export function updateLibro(req, res){
         if(!book){
             throw errorMsj;
         }
-        book.titulo = req.body.Titulo;
-        book.autor = req.body.Autor;
+        book.titulo = req.body.titulo;
+        book.autor = req.body.autor;
         res.status(200).send(JSON.stringify(book));
 
     } catch(e){
